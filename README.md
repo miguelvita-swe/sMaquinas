@@ -147,7 +147,7 @@ Requer Java 8+. O JAR gerado em `target/sMaquinas-1.0.0-shaded.jar` é copiado p
 
 ## 👤 Autor
 
-**Skyy** — Suite de plugins "s" para Minecraft
+**Skyy** —
 
 ---
 
