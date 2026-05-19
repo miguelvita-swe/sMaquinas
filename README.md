@@ -10,9 +10,7 @@ Máquinas são itens colocáveis no mundo que geram drops automaticamente ao con
 
 | Plugin | Descrição |
 |---|---|
-| **sCore** | Núcleo — providers, API, database, menus |
 | **sMaquinas** | Máquinas que geram drops ao consumir combustível |
-| **sEconomia** | Sistema de economia customizada *(em desenvolvimento)* |
 
 ---
 
