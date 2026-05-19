@@ -1,0 +1,27 @@
+Boosters:
+  Booster1:
+    Item:
+      material: EXP_BOTTLE
+      glow: true
+      name: '&aBônus de venda'
+      lore:
+        - ''
+        - '&aTempo: &e{tempo}'
+        - '&aPorcentagem: &e{bonus}%'
+        - ''
+    Tempo: 60
+    Bonus: 10.0
+
+Boosters-drop:
+  Booster1:
+    Item:
+      material: EXP_BOTTLE
+      glow: true
+      name: '&aBônus de DROP (&7clique na máquina)'
+      lore:
+        - ''
+        - '&aTempo: &e{tempo}'
+        - '&aPorcentagem: &e{bonus}%'
+        - ''
+    Tempo: 60
+    Bonus: 10.0

@@ -1,0 +1,186 @@
+Database:
+  Tipo: SQLITE
+  IP: localhost:3306
+  DB: smaquinas
+  User: admin
+  Pass: ''
+  Debug: false
+
+Comando:
+  Maquina:
+    Comando: 'maquinas'
+    Aliases: [ maquina, machine, machines ]
+  Combustivel:
+    Comando: 'combustiveis'
+    Aliases: [ combustivel, fuel, fuels ]
+  Limite:
+    Comando: 'limite'
+    Aliases: [ maquinalimite ]
+  Drops:
+    Comando: 'drops'
+    Aliases: [ ]
+
+login-delay: 20
+
+Opcoes:
+  Bolsa: false
+  Raio: 5
+  Holograma: true
+  TaskTempo: 5
+  Plot: false
+  Acumular bonus: false
+  Maximo amigo: 0
+  Silk: true
+  Multiplicador max: 10
+  Player limite max: 0
+  Plot maquina limite: false
+  Compra Q: true
+  Compra chat: true
+  GastarLimite: true
+  CompactarCombustivel: true
+  CompactarMaquina: false
+  InfinitoDonoOn: false
+  QuebradaStatus: '&cQUEBRADA'
+  SemCombustivelStatus: '&cSEM COMBUSTÍVEL'
+  Verificar perto: true
+  Ativar colocar: false
+  MaquinaClearTask: true
+  HologramaClearTask:
+    Ativar: true
+    Delay: 30
+  FecharQuebrada: true
+  ChecarInfinito: true
+  QuebrarInfinito: true
+  DropsMostrarAmigo: true
+  ZerarQuebrar: false
+  ApenasUm: false
+  DelayQ: 10
+  BlockCima blacklist:
+    - 'SANDSTONE:0'
+  Progress bar:
+    Quantia: 10
+    Simbolo: ':'
+    Cor sim: '&a'
+    Cor nao: '&7'
+  Formatador:
+    Bonus tem: '&fBônus: &a{bonus}%&7 ({display}&7)'
+    Bonus nao tem: ''
+
+Limite:
+  Default: 1
+  Max: 100
+  Ativar: true
+  Item:
+    CustomSkull: true
+    URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+    ID: PLAYER_HEAD
+    Data: 0
+    Glow: true
+    Name: '&bLimite de compra'
+    Lore:
+      - ''
+      - '&fQuantia: &a{quantia}'
+      - ''
+      - '&7Clique com botão direito para ativar.'
+      - ''
+      - '&7Clique com shift + botão direito para compactar'
+      - '&7todos os seus limites no inventário em 1 só.'
+      - ''
+
+Limite stack:
+  CustomSkull: true
+  URL: 'http://textures.minecraft.net/texture/667da379f51d85d74fdba39a164d3f5062ef2ffc0b3e04d339376773931a4e'
+  ID: PLAYER_HEAD
+  Data: 0
+  Glow: true
+  Name: '&bLimite de stack'
+  Lore:
+    - ''
+    - '&fQuantia: &a{quantia}'
+    - ''
+    - '&7Clique com botão direito na máquina para ativar.'
+    - ''
+    - '&7Clique com shift + botão direito para compactar'
+    - '&7todos os seus limites no inventário em 1 só.'
+    - ''
+
+Items:
+  Nao pode:
+    CustomSkull: false
+    URL: ''
+    ID: BARRIER
+    Data: 0
+    Glow: true
+    Name: '{maquina}'
+    Lore:
+      - ''
+      - '&cVocê não pode comprar esta máquina.'
+      - '&7Ela será liberada em: &f{data} - &f{hora}'
+      - '&7Tempo para liberar: &f{time_formatted}'
+      - ''
+  Permissao:
+    CustomSkull: false
+    URL: ''
+    ID: BARRIER
+    Data: 0
+    Glow: true
+    Name: '{maquina}'
+    Lore:
+      - ''
+      - '&cVocê não pode comprar esta máquina.'
+      - '&7Você não possui permissão.'
+      - ''
+  Nao pode combustivel:
+    CustomSkull: false
+    URL: ''
+    ID: BARRIER
+    Data: 0
+    Glow: true
+    Name: '{combustivel}'
+    Lore:
+      - ''
+      - '&cVocê não pode comprar este combustível.'
+      - '&7Ele será liberado em: &f{data} - &f{hora}'
+      - '&7Tempo para liberar: &f{time_formatted}'
+      - ''
+  Permissao combustivel:
+    CustomSkull: false
+    URL: ''
+    ID: BARRIER
+    Data: 0
+    Glow: true
+    Name: '{combustivel}'
+    Lore:
+      - ''
+      - '&cVocê não pode comprar este combustível.'
+      - '&7Você não possui permissão.'
+      - ''
+
+Setas:
+  Voltar:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&cVoltar'
+    Lore:
+      - '&7Clique para voltar ao menu anterior.'
+  Anterior:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&cAnterior'
+    Lore:
+      - '&7Clique para ir à página anterior.'
+  Proximo:
+    CustomSkull: false
+    URL: ''
+    ID: ARROW
+    Data: 0
+    Glow: true
+    Name: '&aPróximo'
+    Lore:
+      - '&7Clique para ir à próxima página.'

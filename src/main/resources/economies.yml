@@ -1,0 +1,13 @@
+economies:
+  Money:
+    provider: 'Money'
+    display: 'Dinheiro'
+    abbreviated: 'coins'
+    allow-offline: true
+    permission: 'smaquinas.provider.money'
+  yMinas:
+    provider: 'yMinas'
+    display: 'Blocos'
+    abbreviated: 'blocos'
+    allow-offline: true
+    permission: 'smaquinas.provider.yminas'

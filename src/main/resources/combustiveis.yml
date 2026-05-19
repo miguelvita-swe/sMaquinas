@@ -1,0 +1,21 @@
+Combustiveis:
+  gasolina:
+    Nome: '&7Gasolina'
+    Infinito: false
+    Consumir: true
+    CombustivelInfinito: false
+    SomenteDono: false
+    Litros: 50
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: COAL
+      Data: 0
+      Name: '&7Gasolina'
+      Lore:
+        - '&7Utilize este item para abastecer'
+        - '&7as suas máquinas.'
+        - ''
+        - '&fLitros: &b{litros} litros&f.'
+        - ''
+        - '&aClique com o combustível em uma máquina.'

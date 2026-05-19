@@ -1,0 +1,178 @@
+Maquinas:
+  ferro:
+    Nome: '&fMáquina de Ferro'
+    Permissao: ''
+    StackMax: 2
+    LimiteStackPadrao: 30
+    Velocidade: 10
+    QuebrarChance: 10.0
+    ConsertarPreco: 1000.0
+    CombustivelOnda: 10
+    GastarApenasOff: false
+    Combustiveis:
+      - 'gasolina'
+    CombustivelInfinito: ''
+    Glass: false
+    GlassType: 'STAINED_GLASS'
+    GlassData: 11
+    Glass-offset: -1.2
+    Glass-animation-enabled: false
+    Glass-animation-speed: 4
+    particles:
+      stick:
+        enabled: true
+        particle: 'flame'
+        off-set: 0.0
+      shiny:
+        enabled: true
+        particle: 'flame'
+        radius: 0.8
+      spiral:
+        enabled: false
+        particle: 'flame'
+        radius: 0.5
+      orbit:
+        enabled: false
+        particle: 'flame'
+        radius: 0.8
+        block-offset-y: 0.5
+      helix:
+        enabled: false
+        particle: 'flame'
+        radius: 0.4
+      pulse:
+        enabled: false
+        particle: 'flame'
+        radius: 0.3
+    Mensagens:
+      Vendeu: '&aVocê vendeu &7{quantia}x {drop}&a por &6{money} coins &8{bonus}&a.'
+    Item:
+      CustomSkull: false
+      URL: ''
+      ID: IRON_BLOCK
+      Data: 0
+      Name: '&fMáquina de Ferro'
+      Lore:
+        - ''
+        - '&f Stack: &7{stack}'
+        - '&f Combustível atual: &c{combustivel_tem}'
+        - '&f Drops armazenados: &c{drops_armazenados}'
+        - '&f Preço por drop: &a100 coins'
+        - ''
+        - '&f Upgrades:'
+        - '&f  > Capacidade de combustível: &b{capacidade}'
+        - '&f  > Drops gerados por rodada: &b{drops}'
+        - '&f  > Velocidade de geração: &b{velocidade}s'
+        - ''
+    Holograma:
+      Altura: 3.5
+      Holograma:
+        - '&fMáquina de Ferro'
+        - '&fDono: &7{dono}&f.'
+        - '&fStack: &bx{quantia}&f.'
+        - '&fDrops armazenados: &bx{drops}&f.'
+        - '&fCombustível: &7{combustivel_tem}/{capacidade} &8{progressbar} &a{porcentagem}%'
+        - '&fStatus: &r{status}'
+        - ''
+        - '[item]IRON_INGOT:0'
+    Upgrades:
+      Capacidade:
+        PrecoPorLevel: 10.0
+        Maximo: 9
+        Padrao: 100
+        AdicionarPorLevel: 50
+        MultiplicarStack: true
+        Prices-PerLevel:
+          price1:
+            provider: 'Money'
+            price: 10000.0
+      Drops:
+        PrecoPorLevel: 20.0
+        Maximo: 5
+        Padrao: 1
+        AdicionarPorLevel: 2
+        Prices-PerLevel:
+          price1:
+            provider: 'Money'
+            price: 10000.0
+      Velocidade:
+        PrecoPorLevel: 15.0
+        Maximo: 5
+        Padrao: 0
+        RemoverPorLevel: 1
+        Prices-PerLevel:
+          price1:
+            provider: 'Money'
+            price: 10000.0
+      Durabilidade:
+        PrecoPorLevel: 25.0
+        Maximo: 5
+        Padrao: 0
+        RemoverPorLevel: 2.0
+        Prices-PerLevel:
+          price1:
+            provider: 'Money'
+            price: 15000.0
+    Drop:
+      Nome: '&fFerro'
+      Icone:
+        CustomSkull: false
+        URL: ''
+        ID: IRON_INGOT
+        Data: 0
+        Name: '&fFerro'
+        Lore:
+          - ''
+          - ' &fDrops armazenados: &a{drops_armazenados}&f.'
+          - ' &fValor por drop: &a100 coins&f.'
+          - ' &fValor total: &a{money} coins&f.'
+          - ' &fBolsa: &7{bolsa}%&f.'
+          - ' &fSeu bônus: &b{bonus_raw}%&f.'
+          - ''
+          - '&aBotão &fESQUERDO&a para vender.'
+          - '&aBotão &fDIREITO&a para recolher.'
+      Icone-All:
+        CustomSkull: false
+        URL: ''
+        ID: IRON_INGOT
+        Data: 0
+        Name: '&fMáquina de Ferro'
+        Lore:
+          - '&7Dono da Máquina: &f{player}'
+          - ''
+          - ' &fDrops armazenados: &a{drops_armazenados}&f.'
+          - ' &fValor por drop: &a100 coins&f.'
+          - ' &fValor total: &a{money} coins&f.'
+          - ' &fBolsa: &7{bolsa}%&f.'
+          - ' &fSeu bônus: &b{bonus_raw}%&f.'
+          - ''
+          - '&aBotão &fESQUERDO&a para vender.'
+          - '&aBotão &fDIREITO&a para recolher.'
+      Item:
+        CustomSkull: false
+        URL: ''
+        ID: IRON_INGOT
+        Data: 0
+        Name: '&fFerro'
+        Lore: []
+      Armazem: true
+      Recolher: true
+      Vender: true
+      'Vender botao': 'LEFT'
+      'Recolher botao': 'RIGHT'
+      'Recolher perm': 'smaquinas.ferro.coletar'
+      'Vender perm': 'smaquinas.ferro.vender'
+      Preco: 100
+      Currencies:
+        preco1:
+          Provider: 'Money'
+          Amount: 100.0
+      Comando:
+        Ativar: false
+        UsarQuantia: true
+        MultiplicarQuantiaPreco: true
+        InvBypass: true
+        ColetarChatBypass: true
+        FormatarQuantia: true
+        Comandos:
+          - 'give {player} iron_ingot {quantia}'

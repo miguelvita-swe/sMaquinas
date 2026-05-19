@@ -1,0 +1,153 @@
+menus:
+  maquinas-shop:
+    titulo: "&8Loja de Máquinas"
+    tamanho: 54
+    itens-decoracao:
+      material: BLACK_STAINED_GLASS_PANE
+      slots: [0,1,2,3,4,5,6,7,8,45,46,47,48,49,50,51,52,53]
+      nome: " "
+    botao-anterior:
+      slot: 48
+      material: ARROW
+      nome: "&cAnterior"
+    botao-proximo:
+      slot: 50
+      material: ARROW
+      nome: "&aProximo"
+    botao-fechar:
+      slot: 49
+      material: BARRIER
+      nome: "&cFechar"
+
+  combustiveis-shop:
+    titulo: "&8Loja de Combustíveis"
+    tamanho: 54
+    itens-decoracao:
+      material: BLACK_STAINED_GLASS_PANE
+      slots: [0,1,2,3,4,5,6,7,8,45,46,47,48,49,50,51,52,53]
+      nome: " "
+    botao-anterior:
+      slot: 48
+      material: ARROW
+      nome: "&cAnterior"
+    botao-proximo:
+      slot: 50
+      material: ARROW
+      nome: "&aProximo"
+    botao-fechar:
+      slot: 49
+      material: BARRIER
+      nome: "&cFechar"
+
+  maquina-info:
+    titulo: "&8Máquina - {nome}"
+    tamanho: 54
+    botao-adicionar-combustivel:
+      slot: 20
+      material: BUCKET
+      nome: "&eAdicionar Combustível"
+      lore:
+        - "&7Clique para adicionar combustível"
+        - "&7da sua mão para esta máquina."
+    botao-coletar:
+      slot: 24
+      material: CHEST
+      nome: "&aColetar Drops"
+      lore:
+        - "&7Clique para coletar os drops"
+        - "&7armazenados nesta máquina."
+    botao-upgrades:
+      slot: 22
+      material: ANVIL
+      nome: "&6Upgrades"
+      lore:
+        - "&7Clique para ver os upgrades"
+        - "&7disponíveis para esta máquina."
+    botao-amigos:
+      slot: 30
+      material: PLAYER_HEAD
+      nome: "&bAmigos"
+      lore:
+        - "&7Clique para gerenciar"
+        - "&7os amigos desta máquina."
+    botao-consertar:
+      slot: 32
+      material: IRON_INGOT
+      nome: "&cConsertar"
+      lore:
+        - "&7Clique para consertar esta máquina."
+    botao-fechar:
+      slot: 49
+      material: BARRIER
+      nome: "&cFechar"
+
+  upgrades:
+    titulo: "&8Upgrades - {nome}"
+    tamanho: 27
+    botao-combustivel:
+      slot: 11
+      material: BUCKET
+      nome: "&eCapacidade de Combustível"
+      lore:
+        - "&7Nível atual: &e{nivel}"
+        - "&7Próximo nível: &a{proximo_nivel}"
+        - ""
+        - "&7Custo: &e{custo}"
+        - ""
+        - "&aClique para fazer upgrade!"
+    botao-drops:
+      slot: 13
+      material: DIAMOND
+      nome: "&aDrops por Onda"
+      lore:
+        - "&7Nível atual: &e{nivel}"
+        - "&7Próximo nível: &a{proximo_nivel}"
+        - ""
+        - "&7Custo: &e{custo}"
+        - ""
+        - "&aClique para fazer upgrade!"
+    botao-velocidade:
+      slot: 15
+      material: FEATHER
+      nome: "&bVelocidade de Geração"
+      lore:
+        - "&7Nível atual: &e{nivel}"
+        - "&7Próximo nível: &a{proximo_nivel}"
+        - ""
+        - "&7Custo: &e{custo}"
+        - ""
+        - "&aClique para fazer upgrade!"
+    botao-voltar:
+      slot: 22
+      material: ARROW
+      nome: "&cVoltar"
+
+  amigos:
+    titulo: "&8Amigos - {nome}"
+    tamanho: 54
+    botao-adicionar:
+      slot: 49
+      material: PLAYER_HEAD
+      nome: "&aAdicionar Amigo"
+      lore:
+        - "&7Clique e escreva o nome do jogador"
+        - "&7para adicionar como amigo."
+    botao-voltar:
+      slot: 45
+      material: ARROW
+      nome: "&cVoltar"
+
+  top-limite:
+    titulo: "&8Top Limite"
+    tamanho: 54
+    itens-decoracao:
+      material: BLACK_STAINED_GLASS_PANE
+      slots: [0,1,2,3,4,5,6,7,8,45,46,47,48,49,50,51,52,53]
+      nome: " "
+    botao-fechar:
+      slot: 49
+      material: BARRIER
+      nome: "&cFechar"
+    lore-jogador:
+      - "&7Limite: &e{limite}"
+      - "&7Máquinas colocadas: &e{colocadas}"

@@ -1,0 +1,93 @@
+name: sMaquinas
+version: 1.0.0
+main: br.com.skyy.maquinas.SMaquinas
+
+api-version: "1.14"
+author: Skyy
+description: Sistema completo de máquinas que geram drops ao consumir combustível.
+
+depend:
+  - sCore
+
+softdepend:
+  - Vault
+  - PlaceholderAPI
+  - DecentHolograms
+  - HolographicDisplays
+  - PlotSquared
+
+commands:
+  maquinas:
+    description: Abre a loja de máquinas.
+    usage: /maquinas
+    aliases: [maquina, machine, machines]
+  combustiveis:
+    description: Abre a loja de combustíveis.
+    usage: /combustiveis
+    aliases: [combustivel, fuel, fuels]
+  limite:
+    description: Mostra o seu limite de máquinas.
+    usage: /limite
+    aliases: [maquinalimite]
+  drops:
+    description: Abre o menu de drops de todas as máquinas.
+    usage: /drops
+
+permissions:
+  smaquinas.admin:
+    description: Permissão para ser reconhecido como admin
+    default: op
+  smaquinas.maquina.usar:
+    description: Permissão para o /maquinas e /maquinas top
+    default: true
+  smaquinas.maquina.booster:
+    description: Permissão para o /maquinas booster
+    default: true
+  smaquinas.maquina.give:
+    description: Permissão para o /maquinas give
+    default: op
+  smaquinas.maquina.givebooster:
+    description: Permissão para o /maquinas givebooster
+    default: op
+  smaquinas.maquina.giveboosterdrop:
+    description: Permissão para o /maquinas giveboosterdrop
+    default: op
+  smaquinas.maquina.lista:
+    description: Permissão para o /maquinas lista
+    default: op
+  smaquinas.maquina.reload:
+    description: Permissão para o /maquinas reload
+    default: op
+  smaquinas.combustivel.usar:
+    description: Permissão para o /combustiveis
+    default: true
+  smaquinas.combustivel.give:
+    description: Permissão para o /combustiveis give
+    default: op
+  smaquinas.combustivel.lista:
+    description: Permissão para o /combustiveis lista
+    default: op
+  smaquinas.limite.usar:
+    description: Permissão para o /limite
+    default: true
+  smaquinas.limite.outros:
+    description: Permissão para o /limite [player]
+    default: op
+  smaquinas.limite.enviar:
+    description: Permissão para o /limite enviar
+    default: op
+  smaquinas.limite.set:
+    description: Permissão para o /limite set
+    default: op
+  smaquinas.limite.add:
+    description: Permissão para o /limite add
+    default: op
+  smaquinas.limite.remove:
+    description: Permissão para o /limite remove
+    default: op
+  smaquinas.limite.give:
+    description: Permissão para o /limite give
+    default: op
+  smaquinas.place.bypass:
+    description: Colocar todas as máquinas sem limite
+    default: op

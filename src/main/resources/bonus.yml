@@ -1,0 +1,6 @@
+Bonus:
+  membro:
+    Ordem: 1
+    Permissao: 'smaquinas.bonus.membro'
+    Display: '&7[Membro]'
+    Bonus: 10.0
